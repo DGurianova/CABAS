@@ -25,7 +25,7 @@ public class Area {
     private String areaCode;
     @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "city_id")
-    private List<City> cityIds;
+    private List<Integer> cityIds;
     @Column(name = "severity_type")
     private Severity severity;
 
