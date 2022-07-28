@@ -4,12 +4,18 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @Builder
-public class EditCitizenByIdRequestDTO {
+public class CitizenResponseDTO {
     private String firstName;
     private String Lastname;
-    private String phoneNumber;
     private String email;
+    private String dateOfBirth;
+    private String phoneNumber;
+    private GuardianResponseDTO guardian;
+    private Integer cityId;
+    private Integer areaId;
 }

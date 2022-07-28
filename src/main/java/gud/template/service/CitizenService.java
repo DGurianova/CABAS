@@ -1,11 +1,13 @@
 package gud.template.service;
 
+import gud.template.dto.CreateCitizenRequestDTO;
+import gud.template.dto.CreateCitizenResponseDTO;
 import gud.template.persistance.entity.Citizen;
 
 public interface CitizenService {
-    Citizen createCitizen(CitizenRequestDTO request);
+    Citizen createCitizen(CreateCitizenRequestDTO request);
 
-    CitizenResponseDTO getCitizenById(Integer id);
+    CreateCitizenResponseDTO getCitizenById(Integer id);
 
     Citizen createGuardians(Integer id);
 
@@ -13,7 +15,7 @@ public interface CitizenService {
 
     Citizen toGuardian(Integer citizenId, Integer guardianId);
 
-    CitizenResponseDTO getCitizenByEmail(String email);
+    CreateCitizenResponseDTO getCitizenByEmail(String email);
 
     Citizen editCitizen(Integer citizenId);
 

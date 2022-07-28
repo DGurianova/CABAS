@@ -1,6 +1,5 @@
 package gud.template.dto;
 
-import gud.template.persistance.entity.Citizen;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,7 +9,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @Builder
-public class CreateGuardianResponseDTO {
+public class EditCitizenGuardiansResponseDTO {
     private String firstName;
     private String Lastname;
     private String email;
